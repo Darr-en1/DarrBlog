@@ -8,8 +8,9 @@ subtitle:
 description:
 keywords:
 author: Darr_en1
-language:
-timezone:
+language: zh-CN
+avatar: 
+timezone: Asia/Shanghai
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
@@ -73,7 +74,8 @@ pagination_dir: page
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: next
+# theme: next
+theme: next-reloaded
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
@@ -81,3 +83,84 @@ deploy:
   type: git
   repo: https://github.com/Darr-en1/Darr-en1.github.io.git
   branch: master
+
+
+# change port
+server:
+  port: 4004
+  compress: true
+  header: true
+
+# search
+search:
+  path: search.xml
+  field: post
+  format: html
+  limit: 10000
+
+# 可以让搜索引擎更好的爬行收录我们的网站,  新建source/robot.txt
+sitemap:
+  path: sitemap.xml
+
+
+# Extensions
+## Plugins: http://hexo.io/plugins/
+#RSS订阅
+feed:
+  type: atom
+  path: atom.xml
+  limit: 20 # Maximum number of posts in the feed (Use 0 or false to show all posts)
+  hub:
+  content:
+
+# Markdown-it config
+markdown:
+  render:
+    html: true
+    xhtmlOut: false
+    breaks: true
+    linkify: true
+    typographer: true
+    quotes: '“”‘’'
+  plugins:
+    - markdown-it-abbr
+    - markdown-it-footnote
+    - markdown-it-ins
+    - markdown-it-sub
+    - markdown-it-sup
+  anchors:
+    level: 2
+    collisionSuffix: 'v'
+    permalink: true
+    permalinkClass: header-anchor
+    permalinkSymbol: ¶
+
+# post_copyright:
+#   enable: true 
+#   author: hiekay 
+#   copyright_text: 作者拥有版权，请注明出处转载。
+
+# 宠物
+live2d:
+  enable: true
+  scriptFrom: local
+  pluginRootPath: live2dw/
+  pluginJsPath: lib/
+  pluginModelPath: assets/
+  tagMode: false
+  log: false
+  model:
+    use: live2d-widget-model-haruto
+  display:
+    position: right
+    width: 150
+    height: 300
+  mobile:
+    show: true
+
+# 共享
+# shareto: true
+
+baidushare:
+  type: slide
+  baidushare: true
