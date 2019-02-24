@@ -12,30 +12,6 @@ tags: blog
 
 如果不会搭建blog,可以参考uchuhimo老哥的文章[如何使用 Hexo 和 GitHub Pages 搭建这个博客](https://uchuhimo.me/2017/04/11/genesis/)，比较详细，我就不重复造轮子了。
 
-#### 自定义文章的默认头部信息
-创建新的页面`hexo new "name"`
-查看`source\_posts\name.md`：
-```cs
----
-title: name
-date: 2018-11-28 10:53:42 
-tags: 
----
-```
-添加`scaffolds/post.md`：
-```cs
----
-title: {{ title }}
-date: {{ date }}
-tags:               #标签
-categories:         #分类
-copyright: true     #版权声明
-permalink: 01       #文章链接
-top: 0              #置顶优先级
-password:           #密码保护
----
-```
-
 #### 文章代码样式修改
 - 行内代码
 修改`themes\next-reloaded\source\css\_custom\custom.styl`文件：
@@ -89,6 +65,30 @@ passage_end_tag:
 
 #### 文章底部标签修改
 修改`themes\next-reloaded\layout\_macro\post.swig`,search`rel="tag">#`,将 `#`更改为`<i class="fa fa-tag"></i>`
+
+#### 自定义文章的默认头部信息
+创建新的页面`hexo new "name"`
+查看`source\_posts\name.md`：
+```cs
+---
+title: name
+date: 2018-11-28 10:53:42 
+tags: 
+---
+```
+添加`scaffolds/post.md`：
+```cs
+---
+title: {{ title }}
+date: {{ date }}
+tags:               #标签
+categories:         #分类
+copyright: true     #版权声明
+permalink: 01       #文章链接
+top: 0              #置顶优先级
+password:           #密码保护
+---
+```
 
 #### 搜索功能
 - 安装

@@ -10,6 +10,4 @@ tags: blog
 
 通过博客的方式来记录自己的学习过程，看着就很有意识呢。
 
-    cdscsdcsdc
-
 <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=133998&auto=1&height=66"></iframe>
