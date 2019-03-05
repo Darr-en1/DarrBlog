@@ -1,7 +1,7 @@
 ---
 title: 第一篇博客
 date: 2018-11-27 17:26:31
-categories:
+categories: blog
 tags: blog
 ---
 作为一个程序员，怎么可以没有一个属于自己的博客网站呢？<!--more-->因为最近都在从事python工作，就想用Django在云服务器上搭建一个blog，查阅的时候发现可以在github上搭建blog，功能特别完善，搭建过程也非常简单（最重要的莫过于免费啦），所以最后选用hexo在github上搭建个人博客。

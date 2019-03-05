@@ -1,7 +1,7 @@
 ---
 title: hexo blog高级配置
 date: 2018-11-28 10:53:42
-categories:
+categories: blog
 copyright: true
 tags: blog
 ---

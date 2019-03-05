@@ -1,5 +1,5 @@
 ---
-title: process communication
+title: 进程间通信
 copyright: true
 permalink: 1
 top: 0
