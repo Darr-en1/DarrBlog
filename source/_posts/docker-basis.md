@@ -114,9 +114,8 @@ docker run --rm [IMAGE]
 
 显然，--rm选项不能与-d同时使用，即只能自动清理foreground容器，不能自动清理detached容器
 
-注意，--rm选项也会清理容器的匿名data volumes。
+注意，--rm选项也会清理容器的匿名data volumes，容器也会一并删除。
 
-所以，执行docker run命令带--rm命令选项，等价于在容器退出后，执行docker rm -v。
 
 ### 创建镜像
 
@@ -182,8 +181,20 @@ USER
 HEALTHCHECK 
 ONBUILD
 
+ADD COPY 区别： 
+- ADD可以将远端的文件复制进容器
+- ADD可以在复制压缩包进容器时会自动解压
+
 CMD ENTRYPOINT HEALTHCHECK 只能有一个，输入多个最后一个生效
+
+**CMD ENTRYPOINT 区别**
+
+run container 后面带的参数 会将 CMD 指令覆盖，但是不能覆盖ENTRYPOINT指令，会变成ENTRYPOINT的参数添加。
+`docker run -it --entrypoint=[指令] [IMAGE]` 就可以覆盖ENTRYPOINT指令
+
 
 
 对于容器而言，其启动程序就是容器应用进程，容器就是为了主进程而存在的，主进程退出，容器就失去了存在的意义，从而退出，其它辅助进程不是它需要关心的东西。守护进程一般在系统启动时开始运行，除非强行终止，否则直到系统关机都保持运行,因此会以守护进程的方式在后端启动服务。
 
+
+Docker 容器通过虚拟网桥进行连接
