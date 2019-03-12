@@ -195,6 +195,21 @@ STATIC_ROOT = os.path.join(BASE_DIR, "static/")
 
 #### uwsgi + nginx +Django
 
+客户端从发送一个 HTTP 请求到 Django 处理请求，分别经过了 web服务器层，WSGI层，web框架层.
+
+*Web服务器层*
+
+对于传统的客户端服务器架构，其请求的处理过程是，客户端向服务器发送请求，服务器接收请求并处理请求，然后给客户端返回响应。
+
+*WSGI层*
+
+定义了 web服务器和 web应用之间的接口规范。uWSGI作为中间层存在
+
+*Web框架层*
+
+处理实现业务的逻辑
+
+
 ##### TCP端口socket
 
 使用uwsgi协议，端口为8001,nginx配置中暴露8000端口与uWSGI通信
@@ -303,3 +318,5 @@ uWSGI，是一个程序，充当Web服务器或中间件。如果架构是Nginx+
 [Nginx+uWSGI+Django原理](https://www.cnblogs.com/Xjng/p/aa4dd23918359c6414d54e4b972e9081.html)
 
 [stackExchage](https://serverfault.com/questions/590819/why-do-i-need-nginx-when-i-have-uwsgi)
+
+[如何理解Nginx, WSGI, Flask之间的关系](https://blog.csdn.net/lihao21/article/details/52304119)
