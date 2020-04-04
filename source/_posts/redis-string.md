@@ -6,7 +6,6 @@ top: 0
 date: 2020-03-25 18:35:26
 tags:
     - redis
-    
 categories:
     - redis
 password:
@@ -66,6 +65,6 @@ redis会先将其转换成raw，然后才进行修改。所以embstr实际上是
 
 [https://database.51cto.com/art/201906/598234.htm](https://database.51cto.com/art/201906/598234.htm)
 
-[https://database.51cto.com/art/201906/598234.htm](https://database.51cto.com/art/201906/598234.htm)
+[https://www.lagou.com/lgeduarticle/16158.html](https://www.lagou.com/lgeduarticle/16158.html)
 
 [https://www.jianshu.com/p/160fb0f73841](https://www.jianshu.com/p/160fb0f73841)
