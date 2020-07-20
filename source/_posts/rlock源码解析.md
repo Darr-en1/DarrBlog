@@ -14,7 +14,6 @@ password:
 ---
 
 可重入锁RLock允许在**同一线程**中被多次**acquire**，我们将一一揭晓它的实现过程。<!--more-->
-
 #### Lock
 
 ```python
