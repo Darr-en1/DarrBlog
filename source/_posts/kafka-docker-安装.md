@@ -113,20 +113,20 @@ services:
 
 执行docker-compose命令
 
-![image-20220407112018737](../images/kafka-docker-安装/image-20220407112018737.png)
+![image-20220407112018737](/images/kafka-docker-安装/image-20220407112018737.png)
 
 ####  测试
 
 kafka1创建 topic
 
-![image-20220407114624830](../images/kafka-docker-安装/image-20220407114624830.png)
+![image-20220407114624830](/images/kafka-docker-安装/image-20220407114624830.png)
 
 向topic 发送一条消息
 
-![image-20220407114925597](../images/kafka-docker-安装/image-20220407114925597.png)
+![image-20220407114925597](/images/kafka-docker-安装/image-20220407114925597.png)
 
 打开一个新的控制台，进入kafka2， 从起始偏移量开始监听
 
-![image-20220407115122974](../images/kafka-docker-安装/image-20220407115122974.png)
+![image-20220407115122974](/images/kafka-docker-安装/image-20220407115122974.png)
 
 我们发现，消息从kafka1 同步至kafka2了，一个kafka集群已经搭建完成，是不是很简单。
