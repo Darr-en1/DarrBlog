@@ -15,7 +15,7 @@ password:
 typora-root-url: ../../source
 ---
 
-有别于其他语言错误和异常的概念模糊，Go语言直接从语法层面提供区分错误和异常的机制。错误通常是良性的，程序中可能出现的问题，因此错误处理也别视为业务的一部分。而异常则作为意料之外的存在而出现，通常是毁灭性的，直接导致程序的崩溃。本文将从多方面维度介绍golang 的 error ，实际应用和最佳实践，相信看完这文章后，你对 golang中 error 能有一个全面的理解。
+有别于其他语言错误和异常的概念模糊，Go语言直接从语法层面提供区分错误和异常的机制。错误通常是良性的，程序中可能出现的问题，因此错误处理也被视为业务的一部分。而异常则作为意料之外的存在而出现，通常是毁灭性的，直接导致程序的崩溃。本文将从多方面维度介绍golang 的 error ，实际应用和最佳实践，相信看完这文章后，你对 golang中 error 能有一个全面的理解。
 <!--more-->
 
 
@@ -957,6 +957,6 @@ func (i errCode) Wrap(err error) error {
 
 [Go语言(golang)新发布的1.13中的Error Wrapping深度分析]( https://www.flysnow.org/2019/09/06/go1.13-error-wrapping.html)
 
-[[骚爆了... Go 错误处理中再套个娃，能解决烦恼不？ 新提案 With ](https://segmentfault.com/a/1190000041888767)](https://segmentfault.com/a/1190000041888767)
+[骚爆了... Go 错误处理中再套个娃，能解决烦恼不？](https://segmentfault.com/a/1190000041888767)
 
 [最佳实践之Golang错误处理](https://segmentfault.com/a/1190000040917186)
