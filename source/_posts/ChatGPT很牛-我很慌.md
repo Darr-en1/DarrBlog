@@ -89,7 +89,7 @@ vim config.dev.json
 
 将刚刚生成的秘钥写入到config.dev.json 的`api_key`中
 
-![image-20230109221626880](/images/image-20230109221626880.png)
+![image-20230109221626880](/images/ChatGPT很牛-我很慌/image-20230109221626880.png)
 
 运行主程序
 
