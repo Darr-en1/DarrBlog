@@ -99,7 +99,7 @@ lrwxrwxrwx 1 root root 12 May 26 16:38 /lib64/libc.so.6 -> libc-2.18.so
 
 当我使用playwright启动时
 
-![image-20230529115524250](/images/playwright流水账笔记/image-20230529115524250.png)![image-20230529115524250]()
+![image-20230529115524250](/images/playwright流水账笔记/image-20230529115524250.png)
 
 #### 在linux上执行有头模式
 
@@ -154,9 +154,9 @@ playwright._impl._api_types.Error:
 
 ###### 安装
 
-**Centos **
+**Centos**
 
-```she
+```shell
 yum install Xvfb
 ```
 
@@ -246,15 +246,17 @@ __lastWatirPrompt
 
 有没有现成的脚本可以实现对这些特征的修改呢？当然有啦（感谢非常优秀的工程师乐于开源的精神，向他们学习，respect）
 
-项目地址：https://github.com/berstend/puppeteer-extra/tree/master/packages/extract-stealth-evasions
+项目地址:https://github.com/berstend/puppeteer-extra/tree/master/packages/extract-stealth-evasions
 
-作者是使用实现的案例是针对 puppeteer的，但是js都是通用的，我们可以把它下载下来使用
+作者是使用实现的案例是针对puppeteer的，但是js都是通用的，我们可以把它下载下来使用
 
-js 地址： https://gitcdn.xyz/repo/berstend/puppeteer-extra/stealth-js/stealth.min.js
+地址：https://gitcdn.xyz/repo/berstend/puppeteer-extra/stealth-js/stealth.min.js
 
-国内访问：http://www.site-digger.com/uploads/stealth.min.js?continueFlag=67080a5e4fdfcd575cd2fed93d46a5ac
+国内：
 
-代码如下：
+http://www.site-digger.com/uploads/stealth.min.js?continueFlag=67080a5e4fdfcd575cd2fed93d46a5ac
+
+代码如下:
 
 ```python
 with sync_playwright() as pw:
